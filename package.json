@@ -1,0 +1,39 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix Portfolio",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": ""
+}
